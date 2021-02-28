@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="943.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.Controller">
+   <children>
+      <Pane prefHeight="173.0" prefWidth="980.0" style="-fx-background-color: #808080;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="130.0" layoutY="53.0" text="School Management" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            
+            <FontAwesomeIcon fill="white" iconName="GROUP" layoutX="53.0" layoutY="103.0" size="60" />
+         </children>
+      </Pane>
+      <GridPane alignment="CENTER" hgap="10.0" layoutX="165.0" layoutY="228.0" prefHeight="320.0" prefWidth="613.0" vgap="10.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="165.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btnDashboard" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Dashboard">
+               <graphic>
+                  <FontAwesomeIcon fill="#808080" iconName="HOME" size="50" />
+
+               </graphic>
+            </Button>
+            <Button fx:id="btnStudents" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Students" GridPane.columnIndex="1">
+               <graphic>
+                  <FontAwesomeIcon fill="#808080" iconName="GROUP" size="50" />
+
+               </graphic>
+            </Button>
+            <Button fx:id="btn_Timetable" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleButtonClicks" prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Timetable" GridPane.columnIndex="2">
+               <graphic>
+                  <FontAwesomeIcon fill="#808080" iconName="CALENDAR_ALT" size="50" />
+
+               </graphic>
+            </Button>
+         </children>
+      </GridPane>
+
+   </children>
+</AnchorPane>
